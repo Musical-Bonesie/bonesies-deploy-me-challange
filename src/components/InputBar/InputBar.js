@@ -1,10 +1,13 @@
 import "./InputBar.scss";
 
-export default function InputBar() {
+export default function InputBar({ handleSubmit }) {
   return (
     <>
-      <label>Type In Your Name</label>
-      <input></input>
+      <label>
+        Type In Your Name
+        <input type="text" />
+      </label>
+      <input type="submit" value="Submit" />
     </>
   );
 }
