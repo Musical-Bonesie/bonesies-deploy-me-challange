@@ -7,17 +7,17 @@
 
 - In terminal, navigate into the folder you'd like to house this project in.
 - git clone this project.
-- npm start your freshly cloned project to make sure it's working how it should.
+- **npm start** your freshly cloned project to make sure it's working how it should.
 - Make any changes you'd like (you can also do this after it's deployed as well)!
 - Create a GitHub repo for this project.
 - Create a Netlify account.
 
 ## Get Ready to Deploy!
 
-- Clone GitHub repo project
+- Clone this GitHub repo.
 - Feel free to make it your own! Add or change something.
-- Create a GitHub repo with for the project.
-- Once everything looks good and you’re ready to deploy it run: npm run build
+- Create a GitHub repo for bonesies-deploy-me-challange project. Call it whatever you like!
+- Once everything looks good and you’re ready to deploy it run: **npm run build**
 - After running npm run build, you should see a lovely build folder appear in your project.
 
 ## Next Steps:
