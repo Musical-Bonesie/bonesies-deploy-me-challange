@@ -10,7 +10,7 @@
 - npm start your freshly cloned project to make sure it's working how it should.
 - Make any changes you'd like (you can also do this after it's deployed as well)!
 - Create a GitHub repo for this project.
-- Create a Netlify account [https://app.netlify.com/teams/musical-bonesie/overview]
+- Create a Netlify account.
 
 ## Get Ready to Deploy!
 
