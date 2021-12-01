@@ -27,7 +27,7 @@ export default function Home() {
         <h2>CONGRATULATIONS {name.toUpperCase()}!!</h2>
         <p>You have successfully deployed an app!</p>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form className="home__form" onSubmit={handleSubmit}>
         <h1>I is Home Page!</h1>
         <label className="home__form-label">
           Type In Your Name
