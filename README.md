@@ -14,12 +14,11 @@
 
 ## Get Ready to Deploy!
 
-- Create a Netlify account:
-  — Clone GitHub repo project
-  — Feel free to make it your own! Add or change something.
-  — Create a GitHub repo with for the project.
-  -Once everything looks good and you’re ready to deploy it run: npm run build
-  -After running npm run build, you should see a lovely build folder appear in your project.
+- Clone GitHub repo project
+- Feel free to make it your own! Add or change something.
+- Create a GitHub repo with for the project.
+- Once everything looks good and you’re ready to deploy it run: npm run build
+- After running npm run build, you should see a lovely build folder appear in your project.
 
 ## Next Steps:
 
