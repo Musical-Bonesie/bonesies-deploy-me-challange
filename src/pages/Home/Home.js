@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { randomConfetti } from "../../utils/actions";
 import "./Home.scss";
-import confetti from "canvas-confetti";
 
 export default function Home() {
   const [userInput, setUserInput] = useState("");
@@ -9,18 +9,9 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setName(userInput);
-
-    confetti({
-      particleCount: 750,
-      startVelocity: 30,
-      spread: 360,
-      origin: {
-        x: Math.random(),
-        // since they fall down, start a bit higher than random
-        y: Math.random() - 0.2,
-      },
-    });
+    randomConfetti();
   };
+
   return (
     <div className="home">
       <div className={name ? "visable" : "hidden"}>
