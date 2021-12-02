@@ -14,7 +14,19 @@
 
 ## Get Ready to Deploy!
 
+### two ways to clone this project to deploy:
+
 - Clone this GitHub repo.
+- Create your own GitHub repo for this project.
+- git remote set-url origin <new git repo you created> add, commit, push.
+
+### OR
+
+- fork the this repo
+- _then continue to the next steps._
+
+### Next Steps
+
 - Feel free to make it your own! Add or change something.
 - Create a GitHub repo for bonesies-deploy-me-challange project. Call it whatever you like!
 - Once everything looks good and you’re ready to deploy it run: **npm run build**
