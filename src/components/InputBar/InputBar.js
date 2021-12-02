@@ -1,13 +1,15 @@
 import "./InputBar.scss";
 
-export default function InputBar({ handleSubmit }) {
+export default function InputBar({ setUserInput, userInput }) {
   return (
     <>
-      <label>
-        Type In Your Name
-        <input type="text" />
-      </label>
-      <input type="submit" value="Submit" />
+      <input
+        className="input-bar"
+        placeholder="Type your name here..."
+        type="text"
+        value={userInput}
+        onChange={(event) => setUserInput(event.target.value)}
+      ></input>
     </>
   );
 }

@@ -11,3 +11,7 @@ export const randomConfetti = () =>
       y: Math.random() - 0.2,
     },
   });
+
+export const handleReset = () => {
+  window.location.reload();
+};

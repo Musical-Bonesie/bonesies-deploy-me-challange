@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { randomConfetti } from "../../utils/actions";
+import { handleReset, randomConfetti } from "../../utils/actions";
+import InputBar from "../../components/InputBar/index";
+import PopUp from "../../components/PopUp/index";
 import "./Home.scss";
 
 export default function Home() {
@@ -11,27 +13,21 @@ export default function Home() {
     setName(userInput);
     randomConfetti();
   };
-
   return (
     <div className="home">
-      <div className={name ? "visable" : "hidden"}>
-        <h2>CONGRATULATIONS {name.toUpperCase()}!!</h2>
-        <p>You have successfully deployed an app!</p>
-      </div>
+      <PopUp name={name} />
       <form className="home__form" onSubmit={handleSubmit}>
-        <h1>I is Home Page!</h1>
+        <h1 className="home__title">I is Home Page!</h1>
         <label className="home__form-label">
           Type In Your Name
-          <input
-            className="home__form-input"
-            placeholder="Type your name here..."
-            type="text"
-            value={userInput}
-            onChange={(event) => setUserInput(event.target.value)}
-          ></input>
+          <InputBar setUserInput={setUserInput} userInput={userInput} />
         </label>
+
         <button className="btn bouncy" type="submit" value="Submit">
           CELEBRATE!
+        </button>
+        <button className="reset-btn bouncy" type="reset" onClick={handleReset}>
+          reset
         </button>
       </form>
     </div>
