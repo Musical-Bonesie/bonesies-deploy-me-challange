@@ -1,7 +1,7 @@
 # What is this application!?
 
 - A mini challenge I created to help students practice deploying a front-end application via Netlify[https://www.netlify.com/].
-- This app is currently designed for 1280 screen.
+- This app is currently designed for 1280px w screen.
 
 ## Getting started:
 
@@ -25,11 +25,16 @@
 - Once you’ve set up your account with Netlify. Click on > _New site from Git_
 - Chose GitHub and follow the instructions to connect GitHub to Netlify
 - Next pick the GitHub repo you’d like to deploy.
-- Make sure the branch you’re deploying from is set to main!
-- **For Build Settings:**
+
+### Site Settings:
+
+- Owner:
+- **Branch to deploy:** main
+
+### For Build Settings:
 
 - **Base directory:** not set
-- _side note_ about Build directory: This is referring to the directory your project is in. So if it’s in a folder called > client it would be “client”. The Default setting is the root of the repository. So in this case you, don’t have to set it.
+- _side note_ about Build directory: This is referring to the directory your project is in. So if it’s in a folder called > client it would be “client”. The Default setting is the root of the repository. So in this case, you don’t have to set it.
 - **Build command:** npm run build
 - **Publish directory:** build
 - Hit Deploy (it may take a moment).
