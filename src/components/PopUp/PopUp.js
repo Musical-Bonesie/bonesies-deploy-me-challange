@@ -1,6 +1,6 @@
 import "./PopUp.scss";
 
-export default function ({ name }) {
+export default function PopUp({ name }) {
   return (
     <div className={name ? "visable" : "hidden"}>
       <h2>CONGRATULATIONS {name.toUpperCase()}!!</h2>

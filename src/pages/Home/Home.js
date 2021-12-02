@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { handleReset, randomConfetti } from "../../utils/actions";
+import { randomConfetti } from "../../utils/actions";
 import InputBar from "../../components/InputBar/index";
 import PopUp from "../../components/PopUp/index";
+import Buttons from "../../components/Buttons/index";
 import "./Home.scss";
 
 export default function Home() {
@@ -22,13 +23,7 @@ export default function Home() {
           Type In Your Name
           <InputBar setUserInput={setUserInput} userInput={userInput} />
         </label>
-
-        <button className="btn bouncy" type="submit" value="Submit">
-          CELEBRATE!
-        </button>
-        <button className="reset-btn bouncy" type="reset" onClick={handleReset}>
-          reset
-        </button>
+        <Buttons />
       </form>
     </div>
   );
